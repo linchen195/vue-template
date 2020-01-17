@@ -35,11 +35,11 @@ module.exports = {
      * 这些规则是关于最佳实践的，帮助你避免一些问题
     */
     'no-multi-spaces': 2, // 禁止多个空格
-    'no-multi-skr': 2, // 禁止多行字符串
+    'no-multi-str': 2, // 禁止多行字符串
     'no-eval': 2, // 禁止eval()
     'no-empty-function': 2, // 禁止空函数
     'radix': [2, 'as-needed'], // 强制在parseInt()使用基数参数
-    'required-await': 2, // 禁止使用不带await的async函数
+    'require-await': 2, // 禁止使用不带await的async函数
     /**
      * Variables 这些规则与变量声明有关：
     */
@@ -49,6 +49,29 @@ module.exports = {
      * Stylistic Issues
      * 这些规则是关于风格指南的，而且是非常主观的
     */
-    'array-bracket-spacing': [2, 'never'], // 禁止或强制在括号内使用空格
+    'array-bracket-spacing': [2, 'never'], // 强制在括号内使用空格
+    'block-spacing': 2, // 强制在代码块中括号前和闭括号后有空格
+    'comma-dangle': [2, 'only-multiline'], // 闭括号同一行禁止拖尾逗号
+    'comma-spacing': [2, { before: false, after: true }], // 强制在逗号周围使用空格
+    'eol-last': [2, 'always'], // 要求文件末尾存在空格
+    'func-call-spacing': 2, // 要求在函数标识符和其调用之间有空格
+    'indent': [2, 2, { SwitchCase: 1 }], // 强制使用一致的缩进 switch除外
+    'key-spacing': 2, // 强制在对象字面量的键和值之间使用一致的空格
+    'keyword-spacing': 2, // 强制关键字周围空格的一致性
+    'prefer-const': 2, // 要求使用const声明后的变量不再被修改
+    'object-curly-spacing': [2, 'always'], // 强制在花括号使用一致的空格
+    'max-len': [2, { code: 200 }], // 单行超过200报错
+    'no-plusplus': [2, { allowForLoopAfterthoughts: true }], // 禁止使用一元操作符 ++ 和 --  for循环最后一个可用
+    'no-multiple-empty-lines': [2, { max: 1, maxEOF: 1 }], // 禁止出现多行空行
+    'no-trailing-spaces': 2, // 禁止行位空白
+    'semi-spacing': [2, { before: false, after: true }], // 强制分好前后有空格
+    'space-before-function-paren': [2, 'always'], // 函数圆括号之前有一个空格
+    'space-unary-ops': 2, // 要求或禁止在一元操作符之前或之后存在空格
+    'spaced-comment': [2, 'always'], // 要求在注释前有空格
+    'space-in-parens': [2, 'never'], // 强制圆括号内一致的空格
+    'space-infix-ops': 2, // 要求中缀操作符周围有空格
+    'vue/html-self-closing': 0,
+    'vue/max-attributes-per-line': 0,
+    'vue/name-property-casing': 0
   }
 }
