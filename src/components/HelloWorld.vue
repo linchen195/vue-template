@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <item :data="data"></item>
+  <div class="main">
+    <tree :data="data"></tree>
     <div class="flt">
       <p class="first"></p>
     </div>
@@ -8,10 +8,10 @@
 </template>
 <script>
 import constant from './constant'
-import item from './item'
+import Tree from './Tree'
 export default {
   name: 'HelloWorld',
-  components: { item },
+  components: { Tree },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
@@ -21,8 +21,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.hello {
-  background-color:grey
+.main {
+  padding: 20px;
+  background-color: #04112b;
 }
 .flt {
   height: 300px;

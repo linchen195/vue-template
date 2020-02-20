@@ -12,7 +12,24 @@ export default {
         {
           label: '双安',
           code: 8,
-          value: 80
+          value: 80,
+          children: [
+            {
+              label: '订个',
+              code: 29,
+              value: 1234,
+            },
+            {
+              label: '蛋糕',
+              code: 28,
+              value: 2,
+            },
+            {
+              label: '多贵',
+              code: 38,
+              value: 2,
+            }
+          ]
         },
         {
           label: '收到了啥的',

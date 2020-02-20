@@ -72,6 +72,7 @@ module.exports = {
     'space-infix-ops': 2, // 要求中缀操作符周围有空格
     'vue/html-self-closing': 0,
     'vue/max-attributes-per-line': 0,
-    'vue/name-property-casing': 0
+    'vue/name-property-casing': 0,
+    'vue/require-default-prop': 0
   }
 }
